@@ -1,8 +1,8 @@
 console.log("Hello from JS");
 
 var users = [
-    { "name": "John", "gender": "Male", "img": "johndoe.png" },
-    { "name": "Jane", "gender": "Female", "img": "janedoe.png" }
+    { "name": "John Doe", "gender": "Male", "img": "johndoe.png" },
+    { "name": "Jane Doe", "gender": "Female", "img": "janedoe.png" }
 ];
 
 var currentUserIndex = 0;
