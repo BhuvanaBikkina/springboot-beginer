@@ -1,18 +1,16 @@
-console.log("Hello from JS");
-
-/*var users = [
+var currentUserIndex = 1;
+var users = [
     { "name": "John Doe", "gender": "Male", "img": "johndoe.png" },
     { "name": "Jane Doe", "gender": "Female", "img": "janedoe.png" }
 ];
 
-var currentUserIndex = 0;
-
 function toggleCard() {
-    currentUserIndex = (currentUserIndex + 1) % 2;
-    var user = users[currentUserIndex];
-
-    // DOM Manipulation
+    currentUserIndex = 1 - currentUserIndex;
+    var nextUser = users[currentUserIndex];
+    displayUser(nextUser);
+}
+function displayUser(user) {
     document.getElementById("userImage").src = user.img;
     document.getElementById("userGender").innerHTML = user.gender;
     document.getElementById("userName").innerHTML = user.name;
-}*/
+}
