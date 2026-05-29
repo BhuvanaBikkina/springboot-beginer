@@ -10,9 +10,8 @@ public class UserService {
 
     public UserService() {
         allUsers = new ArrayList<>(); // Empty Array List
-
-        allUsers.add(new User("Srinivas", "Male", "/johndoe.png", 1));
-        allUsers.add(new User("Bhuvana", "Female", "/janedoe.png", 2));
+        allUsers.add(new User("Bhuvana", "Female", "/janedoe.png", 1));
+        allUsers.add(new User("Srinivas", "Male", "/johndoe.png", 2));
     }
 
     // Name is of our choice

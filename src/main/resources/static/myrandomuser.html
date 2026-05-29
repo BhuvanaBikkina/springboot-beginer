@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Random User</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/card.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/card.html">Card</a>
+        <a href="/toggle.html">Toggle</a>
+        <a href="/randomuser.html">RandomUser</a>
+        <a href="/gitpulse.html">GitPulse</a>
+        <a href="/myrandomuser.html">MyRandomUser</a>
+    </div>
+
+    <div class="card">
+        <img id="userImage" src="johndoe.png" alt="Avatar" style="width:100%">
+
+        <div class="card-container">
+            <h4 id="userName"><b>John Doe</b></h4>
+            <p id="userGender">Male</p>
+
+            <button onclick="getAndDisplayNextRandomUser()">
+                Next Random User
+            </button>
+        </div>
+    </div>
+
+    <script src="/js/myrandomuser.js"></script>
+
+</body>
+
+</html>
