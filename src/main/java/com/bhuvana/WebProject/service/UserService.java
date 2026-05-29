@@ -18,4 +18,40 @@ public class UserService {
     public List<User> getAllUsers() {
         return allUsers;
     }
+
+    public User getOneUser(int id) {
+        for (int i = 0; i < allUsers.size(); i++) {
+            User u = allUsers.get(i);
+            if (u.getId() == id) {
+                return u;
+            }
+        }
+        return null;
+    }
+
+    public User createUser(User u) {
+        allUsers.add(u);
+        return u;
+    }
+
+    public User updateUser(int id, User user) {
+        for (int i = 0; i < allUsers.size(); i++) {
+            User u = allUsers.get(i);
+            if (u.getId() == id) {
+                allUsers.set(i, user);
+                return u;
+            }
+        }
+        return null;
+    }
+
+    public void deleteUser(int id) {
+        for (int i = 0; i < allUsers.size(); i++) {
+            User u = allUsers.get(i);
+            if (u.getId() == id) {
+                allUsers.remove(i);
+                break;
+            }
+        }
+    }
 }
